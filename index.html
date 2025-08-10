@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering & Construction Company</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Navbar White Theme */
+        .navbar {
+            background-color: white !important;
+        }
+
+        .navbar .nav-link {
+            color: black !important;
+            font-weight: 500;
+        }
+
+        .navbar .nav-link.active {
+            color: #0dcaf0 !important;
+        }
+
+        .navbar .nav-link:hover {
+            color: #0dcaf0 !important;
+        }
+
+        /* Hero Section with Video */
+        .hero {
+            position: relative;
+            height: 90vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -2;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            /* Dark overlay for opacity */
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <img src="img/logo/lne_logo_nobg.png" height="75" />
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Background Video -->
+    <section class="hero">
+        <video autoplay muted loop playsinline>
+            <source src="videos/hero_wharehouse_vijayanagaram.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div>
+            <h1 class="display-4 fw-bold">Building the Future Since 2010</h1>
+            <p class="lead">25+ Years of Excellence in Engineering, Architecture & Construction</p>
+            <a href="services.html" class="btn btn-light btn-lg">View Services</a>
+            <a href="projects.html" class="btn btn-outline-light btn-lg ms-2">Our Projects</a>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <!-- <section class="py-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h2>25+</h2>
+                    <p>Years Experience</p>
+                </div>
+                <div class="col-md-3">
+                    <h2>150+</h2>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="col-md-3">
+                    <h2>100+</h2>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="col-md-3">
+                    <h2>2M+</h2>
+                    <p>Sq. Ft. Built</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Featured Services -->
+    <!-- <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="img/service1.jpg" class="card-img-top" alt="Service 1">
+                        <div class="card-body">
+                            <h5 class="card-title">High-Rise Construction</h5>
+                            <p class="card-text">We deliver world-class high-rise residential and commercial buildings
+                                with modern designs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="img/service2.jpg" class="card-img-top" alt="Service 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Pre-Engineered Buildings</h5>
+                            <p class="card-text">Cost-effective, durable steel structures for industrial and commercial
+                                needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+                        <img src="img/service3.jpg" class="card-img-top" alt="Service 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Town Planning</h5>
+                            <p class="card-text">Efficient and sustainable planning for residential communities and
+                                urban spaces.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="footer bg-white text-center py-3">
+        <p class="mb-0">&copy; 2025 laxminarasinma engineers Co. | Designed by Laxminarasinma - IT Solutions</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
