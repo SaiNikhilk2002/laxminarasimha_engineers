@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found | Laxmi Narasimha Engineers</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="assets/logo/favicon-512.png" sizes="512x512">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <style>
+    .notfound {
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      background: var(--navy-800);
+      color: rgba(255, 255, 255, 0.75);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .notfound__inner { position: relative; max-width: 46rem; }
+
+    .notfound h1 {
+      font-size: clamp(2.5rem, 1.5rem + 4vw, 4.5rem);
+      color: var(--white);
+      margin-bottom: 1.25rem;
+    }
+
+    .notfound img { height: 42px; width: auto; margin-bottom: 3rem; }
+
+    .notfound__code {
+      font-family: var(--font-mono);
+      font-size: 0.6875rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--bronze-light);
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+
+    .notfound__actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.5rem; }
+  </style>
+</head>
+
+<body>
+  <main class="notfound">
+    <div class="grid-lines" aria-hidden="true"></div>
+    <div class="shell notfound__inner">
+      <a href="index.html" aria-label="Laxmi Narasimha Engineers, home">
+        <img src="assets/logo/lne-lockup-light.png" alt="Laxmi Narasimha Engineers" width="661" height="112">
+      </a>
+      <span class="notfound__code">Error 404</span>
+      <h1>This page is not on the drawing.</h1>
+      <p>The page you were looking for has moved or no longer exists. Everything about our engineering, services and
+        projects is on the main page.</p>
+      <div class="notfound__actions">
+        <a class="btn btn--light" href="index.html">
+          Back to home
+          <svg class="btn__arrow" viewBox="0 0 18 8" fill="none" stroke="currentColor" stroke-width="1.3"
+            aria-hidden="true">
+            <path d="M0 4h16M12.5 0.6L16.4 4l-3.9 3.4" />
+          </svg>
+        </a>
+        <a class="btn btn--on-dark" href="index.html#contact">
+          Contact us
+          <svg class="btn__arrow" viewBox="0 0 18 8" fill="none" stroke="currentColor" stroke-width="1.3"
+            aria-hidden="true">
+            <path d="M0 4h16M12.5 0.6L16.4 4l-3.9 3.4" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

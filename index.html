@@ -2,174 +2,999 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engineering & Construction Company</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        /* Navbar White Theme */
-        .navbar {
-            background-color: white !important;
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laxmi Narasimha Engineers | Structural Engineering &amp; Construction</title>
+  <meta name="description"
+    content="Laxmi Narasimha Engineers provides structural engineering for RCC and steel structures, high rise buildings, apartments, villas, industrial and commercial structures, site layouts, pre-engineered buildings, engineering designs and drawings, project cost estimations and tender documents.">
+  <meta name="theme-color" content="#0b1b2b">
+  <link rel="canonical" href="https://laxminarasimhaengineers.com/">
 
-        .navbar .nav-link {
-            color: black !important;
-            font-weight: 500;
-        }
+  <!-- Open Graph and social -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Laxmi Narasimha Engineers">
+  <meta property="og:title" content="Laxmi Narasimha Engineers | Structural Engineering &amp; Construction">
+  <meta property="og:description"
+    content="Structural design, engineering drawings, cost estimations and tender documentation for residential, commercial and industrial developments.">
+  <meta property="og:url" content="https://laxminarasimhaengineers.com/">
+  <meta property="og:image" content="https://laxminarasimhaengineers.com/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Laxmi Narasimha Engineers, engineering structures and building possibilities.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Laxmi Narasimha Engineers | Structural Engineering &amp; Construction">
+  <meta name="twitter:description"
+    content="Structural design, engineering drawings, cost estimations and tender documentation for residential, commercial and industrial developments.">
+  <meta name="twitter:image" content="https://laxminarasimhaengineers.com/assets/img/og-image.jpg">
 
-        .navbar .nav-link.active {
-            color: #0dcaf0 !important;
-        }
+  <!-- Icons -->
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="assets/logo/favicon-512.png" sizes="512x512">
+  <link rel="icon" type="image/png" href="assets/logo/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/logo/favicon-180.png">
 
-        .navbar .nav-link:hover {
-            color: #0dcaf0 !important;
-        }
+  <!-- Fonts and first paint -->
+  <link rel="preload" href="assets/fonts/archivo-400-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-400-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" type="image/webp" href="assets/img/hero-development-1920.webp"
+    imagesrcset="assets/img/hero-development-960.webp 960w, assets/img/hero-development-1440.webp 1440w, assets/img/hero-development-1920.webp 1920w, assets/img/hero-development-2560.webp 2560w"
+    imagesizes="100vw" fetchpriority="high">
 
-        /* Hero Section with Video */
-        .hero {
-            position: relative;
-            height: 90vh;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-        }
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/sections.css">
 
-        .hero video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            z-index: -2;
-            transform: translate(-50%, -50%);
-            object-fit: cover;
-        }
-
-        .hero::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.2);
-            /* Dark overlay for opacity */
-            z-index: -1;
-        }
-    </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Laxmi Narasimha Engineers",
+    "alternateName": "LNE Civil",
+    "url": "https://laxminarasimhaengineers.com/",
+    "logo": "https://laxminarasimhaengineers.com/assets/logo/lne-lockup.png",
+    "image": "https://laxminarasimhaengineers.com/assets/img/og-image.jpg",
+    "description": "Structural engineering, design and project documentation for residential, commercial and industrial developments, covering RCC structures, steel structures, pre-engineered buildings, site layouts, engineering drawings, cost estimations and tender documents.",
+    "knowsAbout": [
+      "Structural engineering",
+      "RCC structures",
+      "Steel structures",
+      "Pre-engineered buildings",
+      "High rise buildings",
+      "Site and venture layouts",
+      "Engineering drawings",
+      "Project cost estimation",
+      "Tender documentation"
+    ]
+  }
+  </script>
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <img src="img/logo/lne_logo_full.png" height="75" />
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <!-- <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                </ul> -->
-                
-            </div>
-        </div>
-    </nav>
+  <!-- Icon sprite, engineering line set -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="icon-rcc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.15">
+        <path d="M2.5 3.5h19v17h-19z" />
+        <path d="M8.5 3.5v17M15.5 3.5v17M2.5 9.2h19M2.5 14.8h19" />
+      </symbol>
+      <symbol id="icon-highrise" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.15">
+        <path d="M1.5 21.5h21" />
+        <path d="M4.5 21.5V8.5h6v13M10.5 21.5v-16h8v16" />
+        <path d="M6.5 11.5h2M6.5 15h2M6.5 18.5h2M13 9h3M13 13h3M13 17h3" />
+      </symbol>
+      <symbol id="icon-apartment" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.15">
+        <path d="M1.5 21.5h21M4 21.5V4.5h16v17" />
+        <path d="M7.5 8h3M13.5 8h3M7.5 12h3M13.5 12h3M7.5 16h3M13.5 16h3" />
+      </symbol>
+      <symbol id="icon-villa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.15">
+        <path d="M1.5 21.5h21" />
+        <path d="M2.5 11L12 4.5l9.5 6.5" />
+        <path d="M5 21.5v-9h14v9" />
+        <path d="M10 21.5v-5.5h4v5.5" />
+      </symbol>
+      <symbol id="icon-layout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.15">
+        <path d="M2.5 3.5h19v17h-19z" />
+        <path d="M2.5 12h19M8 3.5V12M15 3.5V12M6 12v8.5M12 12v8.5M17.5 12v8.5" />
+      </symbol>
+      <symbol id="icon-steel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.15">
+        <path d="M1.5 7.5h21M1.5 16.5h21" />
+        <path d="M1.5 7.5l5 9M11.5 7.5l-5 9M11.5 7.5l5 9M22.5 7.5l-5 9" />
+      </symbol>
+      <symbol id="icon-peb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.15">
+        <path d="M1.5 21.5h21" />
+        <path d="M3 21.5V10L12 4l9 6v11.5" />
+        <path d="M6.5 21.5v-7.5h11v7.5M12 4v6" />
+      </symbol>
+      <symbol id="icon-drawing" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.15">
+        <path d="M3 2.5h18v19H3z" />
+        <path d="M8 2.5v19M3 8h5M3 13.5h5M3 19h5" />
+        <path d="M11 6.5h7M11 10.5h7M11 14.5h4" />
+      </symbol>
+      <symbol id="icon-estimate" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.15">
+        <path d="M4.5 2.5h11l4 4v15h-15z" />
+        <path d="M15.5 2.5v4h4" />
+        <path d="M8 17.5v-4M12 17.5v-7M16 17.5v-2.5" />
+      </symbol>
+      <symbol id="icon-tender" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.15">
+        <path d="M7 1.5h9l4 4v13H7z" />
+        <path d="M16 1.5v4h4" />
+        <path d="M4 5.5v17h12" />
+        <path d="M10.5 9.5h6M10.5 13h4" />
+      </symbol>
+      <symbol id="icon-arrow" viewBox="0 0 18 8" fill="none" stroke="currentColor" stroke-width="1.3">
+        <path d="M0 4h16M12.5 0.6L16.4 4l-3.9 3.4" />
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3">
+        <path d="M2.5 8.5l3.5 3.5 7.5-8" />
+      </symbol>
+      <symbol id="icon-phone" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.2">
+        <path d="M5.5 2.5h3l1.5 4-2 1.5a10 10 0 0 0 4 4l1.5-2 4 1.5v3a1.5 1.5 0 0 1-1.7 1.5C8.4 15.3 4.7 11.6 4 4.2A1.5 1.5 0 0 1 5.5 2.5z" />
+      </symbol>
+      <symbol id="icon-mail" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.2">
+        <path d="M2.5 4.5h15v11h-15z" />
+        <path d="M2.5 5.5l7.5 5.5 7.5-5.5" />
+      </symbol>
+      <symbol id="icon-pin" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.2">
+        <path d="M10 18s6-5.4 6-9.4A6 6 0 0 0 4 8.6C4 12.6 10 18 10 18z" />
+        <circle cx="10" cy="8.5" r="2.2" />
+      </symbol>
+    </defs>
+  </svg>
 
-    <!-- Hero Section with Background Video -->
-    <section class="hero">
-        <video autoplay muted loop playsinline>
-            <source src="videos/hero_wharehouse_vijayanagaram.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div>
-            <h1 class="display-4 fw-bold">Building the Future Since 2010</h1>
-            <p class="lead">25+ Years of Excellence in Engineering, Architecture & Construction</p>
-            <a href="#" class="btn btn-light btn-lg">View Services</a>
-            <a href="#" class="btn btn-outline-light btn-lg ms-2">Our Projects</a>
+  <!-- ====================================================================
+       Header
+       ==================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="shell site-header__inner">
+      <a class="brand" href="#home" aria-label="Laxmi Narasimha Engineers, home">
+        <img class="brand__dark" src="assets/logo/lne-lockup.png" alt="Laxmi Narasimha Engineers" width="661"
+          height="112">
+        <img class="brand__light" src="assets/logo/lne-lockup-light.png" alt="" aria-hidden="true" width="661"
+          height="112">
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#home">Home</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#services">Services</a></li>
+          <li><a class="nav__link" href="#expertise">Expertise</a></li>
+          <li><a class="nav__link" href="#projects">Projects</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__cta">
+        <a class="btn" href="#contact">
+          Get a Project Estimate
+          <svg class="btn__arrow" aria-hidden="true">
+            <use href="#icon-arrow"></use>
+          </svg>
+        </a>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav"
+        aria-label="Open menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav" aria-label="Mobile" hidden>
+    <ul class="mobile-nav__list">
+      <li><a class="mobile-nav__link" href="#home"><span class="idx">01</span>Home</a></li>
+      <li><a class="mobile-nav__link" href="#about"><span class="idx">02</span>About</a></li>
+      <li><a class="mobile-nav__link" href="#services"><span class="idx">03</span>Services</a></li>
+      <li><a class="mobile-nav__link" href="#expertise"><span class="idx">04</span>Expertise</a></li>
+      <li><a class="mobile-nav__link" href="#projects"><span class="idx">05</span>Projects</a></li>
+      <li><a class="mobile-nav__link" href="#contact"><span class="idx">06</span>Contact</a></li>
+    </ul>
+    <div class="mobile-nav__foot">
+      <a class="btn btn--light" href="#contact">
+        Get a Project Estimate
+        <svg class="btn__arrow" aria-hidden="true">
+          <use href="#icon-arrow"></use>
+        </svg>
+      </a>
+      <p class="mobile-nav__meta">Engineering. Structures. Construction.</p>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ==================================================================
+         Hero
+         ================================================================== -->
+    <section class="hero" id="home">
+      <div class="hero__media" aria-hidden="true" data-parallax="0.18">
+        <picture>
+          <source type="image/webp"
+            srcset="assets/img/hero-development-960.webp 960w, assets/img/hero-development-1440.webp 1440w, assets/img/hero-development-1920.webp 1920w, assets/img/hero-development-2560.webp 2560w"
+            sizes="100vw">
+          <img src="assets/img/hero-development.jpg" alt="" width="2800" height="1575" fetchpriority="high"
+            decoding="async">
+        </picture>
+      </div>
+      <div class="hero__scrim" aria-hidden="true"></div>
+      <div class="hero__lines" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+
+      <div class="hero__body">
+        <div class="shell">
+          <p class="eyebrow hero__eyebrow hero__fade">Structural Engineering / Construction</p>
+          <h1 class="hero__title">
+            <span class="line"><span>Engineering Structures.</span></span>
+            <span class="line"><span><em>Building Possibilities.</em></span></span>
+          </h1>
+          <p class="hero__lead hero__fade">
+            Structural design, engineering solutions and project documentation for residential, commercial and
+            industrial developments.
+          </p>
+          <div class="hero__actions hero__fade">
+            <a class="btn btn--light" href="#contact">
+              Discuss Your Project
+              <svg class="btn__arrow" aria-hidden="true">
+                <use href="#icon-arrow"></use>
+              </svg>
+            </a>
+            <a class="btn btn--on-dark" href="#services">
+              Explore Our Services
+              <svg class="btn__arrow" aria-hidden="true">
+                <use href="#icon-arrow"></use>
+              </svg>
+            </a>
+          </div>
         </div>
+      </div>
+
+      <div class="hero__foot">
+        <div class="shell hero__foot-inner">
+          <ul class="hero__tags">
+            <li>RCC Structures</li>
+            <li>Steel Structures</li>
+            <li>Pre-Engineered Buildings</li>
+            <li>Estimation &amp; Tenders</li>
+          </ul>
+          <a class="hero__scroll" href="#about">
+            Scroll
+            <svg width="10" height="14" viewBox="0 0 10 14" fill="none" stroke="currentColor" stroke-width="1.2"
+              aria-hidden="true">
+              <path d="M5 0v12M1 8.5l4 4 4-4" />
+            </svg>
+          </a>
+        </div>
+      </div>
     </section>
 
-    <!-- Quick Stats -->
-    <!-- <section class="py-5 text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <h2>25+</h2>
-                    <p>Years Experience</p>
-                </div>
-                <div class="col-md-3">
-                    <h2>150+</h2>
-                    <p>Projects Completed</p>
-                </div>
-                <div class="col-md-3">
-                    <h2>100+</h2>
-                    <p>Happy Clients</p>
-                </div>
-                <div class="col-md-3">
-                    <h2>2M+</h2>
-                    <p>Sq. Ft. Built</p>
-                </div>
+    <!-- ==================================================================
+         About
+         ================================================================== -->
+    <section class="section section--paper" id="about">
+      <div class="grid-lines" aria-hidden="true"></div>
+      <div class="shell">
+        <div class="about__grid">
+          <div class="about__media reveal-img" data-reveal>
+            <div class="frame frame--4x5">
+              <picture>
+                <source type="image/webp"
+                  srcset="assets/img/rcc-frame-560.webp 560w, assets/img/rcc-frame-900.webp 900w, assets/img/rcc-frame-1280.webp 1280w"
+                  sizes="(max-width: 900px) 92vw, 40vw">
+                <img src="assets/img/rcc-frame.jpg" alt="Reinforced concrete framed structure under construction"
+                  width="1494" height="1867" loading="lazy" decoding="async">
+              </picture>
             </div>
-        </div>
-    </section> -->
-
-    <!-- Featured Services -->
-    <!-- <section class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Our Services</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card shadow-sm">
-                        <img src="img/service1.jpg" class="card-img-top" alt="Service 1">
-                        <div class="card-body">
-                            <h5 class="card-title">High-Rise Construction</h5>
-                            <p class="card-text">We deliver world-class high-rise residential and commercial buildings
-                                with modern designs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card shadow-sm">
-                        <img src="img/service2.jpg" class="card-img-top" alt="Service 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Pre-Engineered Buildings</h5>
-                            <p class="card-text">Cost-effective, durable steel structures for industrial and commercial
-                                needs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card shadow-sm">
-                        <img src="img/service3.jpg" class="card-img-top" alt="Service 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Town Planning</h5>
-                            <p class="card-text">Efficient and sustainable planning for residential communities and
-                                urban spaces.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="about__caption">
+              <strong>Complete engineering scope</strong>
+              Design, drawings, estimation and tender documentation prepared for execution.
             </div>
+          </div>
+
+          <div class="about__content">
+            <p class="eyebrow reveal" data-reveal>About the firm</p>
+            <h2 class="reveal" data-reveal data-reveal-delay="60">Engineering that begins with the structure.</h2>
+            <p class="about__lead reveal" data-reveal data-reveal-delay="120">
+              Laxmi Narasimha Engineers delivers structural engineering, design and project documentation solutions for
+              residential, commercial and industrial developments.
+            </p>
+            <div class="about__text reveal" data-reveal data-reveal-delay="180">
+              <p>
+                Our work covers the engineering scope of a building project: structural systems for reinforced concrete
+                and steel, layouts for individual sites and ventures, detailed engineering drawings for execution, and
+                the estimation and tender documentation that supports procurement.
+              </p>
+              <p>
+                Every project is approached on its own terms. The structural approach is developed around the
+                requirements of the site, the intended development and the way the project will actually be built.
+              </p>
+            </div>
+
+            <ul class="capability-list reveal" data-reveal data-reveal-delay="220">
+              <li><svg width="16" height="16" aria-hidden="true">
+                  <use href="#icon-check"></use>
+                </svg>RCC structures</li>
+              <li><svg width="16" height="16" aria-hidden="true">
+                  <use href="#icon-check"></use>
+                </svg>Steel structures</li>
+              <li><svg width="16" height="16" aria-hidden="true">
+                  <use href="#icon-check"></use>
+                </svg>High rise buildings</li>
+              <li><svg width="16" height="16" aria-hidden="true">
+                  <use href="#icon-check"></use>
+                </svg>Apartments and flats</li>
+              <li><svg width="16" height="16" aria-hidden="true">
+                  <use href="#icon-check"></use>
+                </svg>Villas and individual houses</li>
+              <li><svg width="16" height="16" aria-hidden="true">
+                  <use href="#icon-check"></use>
+                </svg>Industrial buildings</li>
+              <li><svg width="16" height="16" aria-hidden="true">
+                  <use href="#icon-check"></use>
+                </svg>Commercial buildings</li>
+              <li><svg width="16" height="16" aria-hidden="true">
+                  <use href="#icon-check"></use>
+                </svg>Site and venture layouts</li>
+              <li><svg width="16" height="16" aria-hidden="true">
+                  <use href="#icon-check"></use>
+                </svg>Pre-engineered buildings</li>
+              <li><svg width="16" height="16" aria-hidden="true">
+                  <use href="#icon-check"></use>
+                </svg>Estimation and tenders</li>
+            </ul>
+          </div>
         </div>
-    </section> -->
+      </div>
+    </section>
 
-    <!-- Footer -->
-    <footer class="footer bg-white text-center py-3">
-        <p class="mb-0 text-black">&copy; 2025 Laxminarasinma Engineers | Designed by Laxminarasinma - IT Solutions</p>
-    </footer>
+    <!-- ==================================================================
+         Services
+         ================================================================== -->
+    <section class="section section--white" id="services">
+      <div class="shell">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow reveal" data-reveal>Services</p>
+            <h2 class="section-head__title reveal" data-reveal data-reveal-delay="60">
+              Structural engineering, end to end.
+            </h2>
+          </div>
+          <p class="section-head__lead reveal" data-reveal data-reveal-delay="120">
+            From the structural system through to the drawings, estimates and tender documents a project needs to move
+            into execution.
+          </p>
+        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="services__grid">
+          <article class="service reveal" data-reveal data-reveal-delay="0">
+            <span class="service__index">01</span>
+            <svg class="service__icon" aria-hidden="true">
+              <use href="#icon-rcc"></use>
+            </svg>
+            <h3 class="service__title">RCC Structures</h3>
+            <p class="service__text">Structural solutions for reinforced concrete buildings with an emphasis on
+              strength, safety and practical execution.</p>
+          </article>
+
+          <article class="service reveal" data-reveal data-reveal-delay="55">
+            <span class="service__index">02</span>
+            <svg class="service__icon" aria-hidden="true">
+              <use href="#icon-highrise"></use>
+            </svg>
+            <h3 class="service__title">High Rise Buildings</h3>
+            <p class="service__text">Structural planning and engineering support for high rise developments.</p>
+          </article>
+
+          <article class="service reveal" data-reveal data-reveal-delay="110">
+            <span class="service__index">03</span>
+            <svg class="service__icon" aria-hidden="true">
+              <use href="#icon-apartment"></use>
+            </svg>
+            <h3 class="service__title">Apartments &amp; Flats</h3>
+            <p class="service__text">Structural engineering and documentation for apartment and residential
+              developments.</p>
+          </article>
+
+          <article class="service reveal" data-reveal data-reveal-delay="165">
+            <span class="service__index">04</span>
+            <svg class="service__icon" aria-hidden="true">
+              <use href="#icon-villa"></use>
+            </svg>
+            <h3 class="service__title">Villas</h3>
+            <p class="service__text">Engineering and structural solutions for individual villas and premium residential
+              projects.</p>
+          </article>
+
+          <article class="service reveal" data-reveal data-reveal-delay="220">
+            <span class="service__index">05</span>
+            <svg class="service__icon" aria-hidden="true">
+              <use href="#icon-layout"></use>
+            </svg>
+            <h3 class="service__title">Site Layouts</h3>
+            <p class="service__text">Planning and layout solutions for developments, ventures and individual sites.</p>
+          </article>
+
+          <article class="service reveal" data-reveal data-reveal-delay="275">
+            <span class="service__index">06</span>
+            <svg class="service__icon" aria-hidden="true">
+              <use href="#icon-steel"></use>
+            </svg>
+            <h3 class="service__title">Steel Structures</h3>
+            <p class="service__text">Engineering solutions for steel based industrial, commercial and residential
+              structures.</p>
+          </article>
+
+          <article class="service reveal" data-reveal data-reveal-delay="330">
+            <span class="service__index">07</span>
+            <svg class="service__icon" aria-hidden="true">
+              <use href="#icon-peb"></use>
+            </svg>
+            <h3 class="service__title">Pre-Engineered Buildings</h3>
+            <p class="service__text">Structural solutions for efficient and practical pre-engineered building
+              applications.</p>
+          </article>
+
+          <article class="service reveal" data-reveal data-reveal-delay="385">
+            <span class="service__index">08</span>
+            <svg class="service__icon" aria-hidden="true">
+              <use href="#icon-drawing"></use>
+            </svg>
+            <h3 class="service__title">Designs &amp; Drawings</h3>
+            <p class="service__text">Detailed engineering designs and technical drawings for project execution.</p>
+          </article>
+
+          <article class="service reveal" data-reveal data-reveal-delay="440">
+            <span class="service__index">09</span>
+            <svg class="service__icon" aria-hidden="true">
+              <use href="#icon-estimate"></use>
+            </svg>
+            <h3 class="service__title">Project Cost Estimations</h3>
+            <p class="service__text">Clear project estimation support to help clients understand expected project costs.
+            </p>
+          </article>
+
+          <article class="service reveal" data-reveal data-reveal-delay="495">
+            <span class="service__index">10</span>
+            <svg class="service__icon" aria-hidden="true">
+              <use href="#icon-tender"></use>
+            </svg>
+            <h3 class="service__title">Tender Documents</h3>
+            <p class="service__text">Professional tender documentation prepared to support project procurement and
+              execution.</p>
+          </article>
+
+          <article class="service service--cta reveal" data-reveal data-reveal-delay="605">
+            <h3>Not sure which of these your project needs?</h3>
+            <p>Send us the project details and we will set out the engineering, design and documentation scope
+              involved.</p>
+            <a class="link-arrow" href="#contact">
+              Request a consultation
+              <svg width="18" height="8" aria-hidden="true">
+                <use href="#icon-arrow"></use>
+              </svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         Expertise
+         ================================================================== -->
+    <section class="section section--dark" id="expertise">
+      <div class="grid-lines" aria-hidden="true"></div>
+      <div class="shell">
+        <div class="expertise__grid">
+          <div class="expertise__content">
+            <p class="eyebrow reveal" data-reveal>Capabilities</p>
+            <h2 class="reveal" data-reveal data-reveal-delay="60">Built Around Engineering Precision</h2>
+            <p class="section-head__lead reveal" data-reveal data-reveal-delay="120">
+              Structural systems, engineering drawings and documentation developed with the practical realities of
+              construction in mind.
+            </p>
+
+            <div class="expertise__list">
+              <article class="expertise__item reveal" data-reveal data-reveal-delay="60">
+                <span class="expertise__num">01</span>
+                <div>
+                  <h3>Reinforced Concrete Systems</h3>
+                  <p>Framed structures, load paths and detailing for RCC buildings across residential, commercial and
+                    high rise developments.</p>
+                </div>
+              </article>
+              <article class="expertise__item reveal" data-reveal data-reveal-delay="120">
+                <span class="expertise__num">02</span>
+                <div>
+                  <h3>Steel and Pre-Engineered Structures</h3>
+                  <p>Steel frames, trusses and pre-engineered building solutions for industrial, commercial and
+                    residential applications.</p>
+                </div>
+              </article>
+              <article class="expertise__item reveal" data-reveal data-reveal-delay="180">
+                <span class="expertise__num">03</span>
+                <div>
+                  <h3>Documentation and Estimation</h3>
+                  <p>Engineering drawings, project cost estimations and tender documents prepared to support procurement
+                    and execution.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="expertise__visual reveal-img" data-reveal>
+            <div class="frame frame--3x2">
+              <picture>
+                <source type="image/webp"
+                  srcset="assets/img/steel-frame-560.webp 560w, assets/img/steel-frame-900.webp 900w, assets/img/steel-frame-1400.webp 1400w"
+                  sizes="(max-width: 980px) 92vw, 46vw">
+                <img src="assets/img/steel-frame.jpg" alt="Structural steel portal frame erected on site" width="2800"
+                  height="1867" loading="lazy" decoding="async">
+              </picture>
+              <span class="expertise__scrim" aria-hidden="true"></span>
+            </div>
+
+            <svg class="expertise__diagram" viewBox="-24 -20 448 307" fill="none" stroke="currentColor"
+              stroke-width="1" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+              <!-- portal frame -->
+              <path data-draw style="--len:170;--draw-delay:120ms" d="M70 210V96" />
+              <path data-draw style="--len:170;--draw-delay:120ms" d="M330 210V96" />
+              <path data-draw style="--len:180;--draw-delay:340ms" d="M70 96l130-38 130 38" />
+              <path class="tie" d="M70 96h260" stroke-dasharray="4 5" opacity="0.45" />
+              <path data-draw style="--len:300;--draw-delay:80ms" d="M40 210h320" />
+              <!-- nodes -->
+              <circle cx="70" cy="96" r="3" />
+              <circle cx="330" cy="96" r="3" />
+              <circle cx="200" cy="58" r="3" />
+              <!-- dimension line -->
+              <path data-draw style="--len:270;--draw-delay:700ms" d="M70 238h260M70 232v12M330 232v12" opacity="0.7" />
+              <path data-draw style="--len:120;--draw-delay:700ms" d="M22 96v114M16 96h12M16 210h12" opacity="0.7" />
+              <text x="200" y="252" text-anchor="middle">SPAN</text>
+              <text x="10" y="156" text-anchor="middle" transform="rotate(-90 10 156)">HEIGHT</text>
+              <text x="200" y="46" text-anchor="middle">APEX</text>
+            </svg>
+          </div>
+        </div>
+
+        <p class="expertise__note reveal" data-reveal>
+          <span>Fig. 01 / Portal frame, typical arrangement</span>
+          <span>Span / Height / Load path</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         Project types
+         ================================================================== -->
+    <section class="section section--paper" id="project-types">
+      <div class="shell">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow reveal" data-reveal>Project types</p>
+            <h2 class="section-head__title reveal" data-reveal data-reveal-delay="60">Where our engineering is applied.
+            </h2>
+          </div>
+          <p class="section-head__lead reveal" data-reveal data-reveal-delay="120">
+            The same engineering discipline applied across residential, commercial, industrial and development
+            projects.
+          </p>
+        </div>
+      </div>
+
+      <div class="shell">
+        <div class="types__grid">
+          <article class="type reveal" data-reveal data-reveal-delay="0">
+            <picture>
+              <source type="image/webp"
+                srcset="assets/img/type-residential-420.webp 420w, assets/img/type-residential-640.webp 640w, assets/img/type-residential-900.webp 900w"
+                sizes="(max-width: 560px) 92vw, (max-width: 980px) 46vw, 24vw">
+              <img src="assets/img/type-residential.jpg" alt="Modern apartment building facade" width="1415"
+                height="1887" loading="lazy" decoding="async">
+            </picture>
+            <div class="type__body">
+              <span class="type__index">01</span>
+              <h3 class="type__title">Residential</h3>
+              <p class="type__text">Villas, individual houses, apartments and flats.</p>
+              <span class="type__rule" aria-hidden="true"></span>
+            </div>
+          </article>
+
+          <article class="type reveal" data-reveal data-reveal-delay="90">
+            <picture>
+              <source type="image/webp"
+                srcset="assets/img/type-commercial-420.webp 420w, assets/img/type-commercial-640.webp 640w, assets/img/type-commercial-900.webp 900w"
+                sizes="(max-width: 560px) 92vw, (max-width: 980px) 46vw, 24vw">
+              <img src="assets/img/type-commercial.jpg" alt="Glass facade of a modern commercial building" width="1394"
+                height="1859" loading="lazy" decoding="async">
+            </picture>
+            <div class="type__body">
+              <span class="type__index">02</span>
+              <h3 class="type__title">Commercial</h3>
+              <p class="type__text">Commercial buildings and developments.</p>
+              <span class="type__rule" aria-hidden="true"></span>
+            </div>
+          </article>
+
+          <article class="type reveal" data-reveal data-reveal-delay="180">
+            <picture>
+              <source type="image/webp"
+                srcset="assets/img/type-industrial-420.webp 420w, assets/img/type-industrial-640.webp 640w, assets/img/type-industrial-900.webp 900w"
+                sizes="(max-width: 560px) 92vw, (max-width: 980px) 46vw, 24vw">
+              <img src="assets/img/type-industrial.jpg" alt="Industrial warehouse building exterior" width="903"
+                height="1204" loading="lazy" decoding="async">
+            </picture>
+            <div class="type__body">
+              <span class="type__index">03</span>
+              <h3 class="type__title">Industrial</h3>
+              <p class="type__text">Industrial structures, steel structures and pre-engineered buildings.</p>
+              <span class="type__rule" aria-hidden="true"></span>
+            </div>
+          </article>
+
+          <article class="type reveal" data-reveal data-reveal-delay="270">
+            <picture>
+              <source type="image/webp"
+                srcset="assets/img/type-layouts-420.webp 420w, assets/img/type-layouts-640.webp 640w, assets/img/type-layouts-900.webp 900w"
+                sizes="(max-width: 560px) 92vw, (max-width: 980px) 46vw, 24vw">
+              <img src="assets/img/type-layouts.jpg" alt="Aerial view of a planned residential development" width="1400"
+                height="1867" loading="lazy" decoding="async">
+            </picture>
+            <div class="type__body">
+              <span class="type__index">04</span>
+              <h3 class="type__title">Development &amp; Layouts</h3>
+              <p class="type__text">Site layouts and venture planning.</p>
+              <span class="type__rule" aria-hidden="true"></span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         Projects
+         ================================================================== -->
+    <section class="section section--white" id="projects">
+      <div class="shell">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow reveal" data-reveal>Selected work</p>
+            <h2 class="section-head__title reveal" data-reveal data-reveal-delay="60">Our Projects</h2>
+          </div>
+          <p class="section-head__lead reveal" data-reveal data-reveal-delay="120">
+            Selected work will be showcased here.
+          </p>
+        </div>
+
+        <!-- Rendered from js/data/projects.js. The empty state below is replaced
+             automatically as soon as project entries are added. -->
+        <div id="projects-content" class="reveal" data-reveal>
+          <div class="projects__empty">
+            <div class="projects__empty-media">
+              <picture>
+                <source type="image/webp"
+                  srcset="assets/img/engineering-drawings-480.webp 480w, assets/img/engineering-drawings-800.webp 800w, assets/img/engineering-drawings-1200.webp 1200w"
+                  sizes="(max-width: 860px) 92vw, 46vw">
+                <img src="assets/img/engineering-drawings.jpg" alt="Engineering site drawing with a measuring scale"
+                  width="2800" height="1867" loading="lazy" decoding="async">
+              </picture>
+            </div>
+            <div class="projects__empty-body">
+              <span class="projects__empty-tag">Project showcase</span>
+              <h3>The project showcase is in preparation.</h3>
+              <p>
+                Completed and ongoing project details will be published in this section, including the project type,
+                location and the engineering services provided.
+              </p>
+              <a class="link-arrow" href="#contact">
+                Discuss your project
+                <svg width="18" height="8" aria-hidden="true">
+                  <use href="#icon-arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         Why choose us
+         ================================================================== -->
+    <section class="section section--concrete" id="why">
+      <div class="shell">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow reveal" data-reveal>Why work with us</p>
+            <h2 class="section-head__title reveal" data-reveal data-reveal-delay="60">A practical engineering partner.
+            </h2>
+          </div>
+          <p class="section-head__lead reveal" data-reveal data-reveal-delay="120">
+            Clear engineering thinking, documented properly, so a project can move from design into construction
+            without guesswork.
+          </p>
+        </div>
+
+        <div class="why__grid">
+          <article class="why__item reveal" data-reveal data-reveal-delay="0">
+            <span class="why__num">01</span>
+            <h3>Engineering led approach</h3>
+            <p>Decisions are driven by structural requirements and site conditions rather than assumptions.</p>
+          </article>
+          <article class="why__item reveal" data-reveal data-reveal-delay="70">
+            <span class="why__num">02</span>
+            <h3>Practical structural solutions</h3>
+            <p>Structures are designed so they can be built efficiently and safely on site.</p>
+          </article>
+          <article class="why__item reveal" data-reveal data-reveal-delay="140">
+            <span class="why__num">03</span>
+            <h3>Detailed documentation</h3>
+            <p>Drawings and documents carry the level of detail execution teams actually need.</p>
+          </article>
+          <article class="why__item reveal" data-reveal data-reveal-delay="210">
+            <span class="why__num">04</span>
+            <h3>Residential to industrial</h3>
+            <p>Capability across RCC and steel structures for a wide range of development types.</p>
+          </article>
+          <article class="why__item reveal" data-reveal data-reveal-delay="280">
+            <span class="why__num">05</span>
+            <h3>Design and estimation together</h3>
+            <p>Structural design supported by project cost estimation and tender documentation.</p>
+          </article>
+          <article class="why__item reveal" data-reveal data-reveal-delay="350">
+            <span class="why__num">06</span>
+            <h3>Project specific solutions</h3>
+            <p>Each project is planned around its own requirements rather than a standard template.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         Process
+         ================================================================== -->
+    <section class="section section--dark" id="process">
+      <div class="grid-lines" aria-hidden="true"></div>
+      <div class="shell">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow reveal" data-reveal>Engineering process</p>
+            <h2 class="section-head__title reveal" data-reveal data-reveal-delay="60">From requirement to deliverable.
+            </h2>
+          </div>
+          <p class="section-head__lead reveal" data-reveal data-reveal-delay="120">
+            A consistent sequence that keeps the structural intent intact from the first conversation to the documents
+            issued for execution.
+          </p>
+        </div>
+
+        <div class="process__grid">
+          <article class="process__step reveal" data-reveal>
+            <span class="process__num">01</span>
+            <h3>Understand</h3>
+            <p>Understand the project requirements, site conditions and intended development.</p>
+          </article>
+          <article class="process__step reveal" data-reveal data-reveal-delay="90">
+            <span class="process__num">02</span>
+            <h3>Plan</h3>
+            <p>Develop the appropriate structural and engineering approach.</p>
+          </article>
+          <article class="process__step reveal" data-reveal data-reveal-delay="180">
+            <span class="process__num">03</span>
+            <h3>Design</h3>
+            <p>Prepare structural designs and detailed engineering drawings.</p>
+          </article>
+          <article class="process__step reveal" data-reveal data-reveal-delay="270">
+            <span class="process__num">04</span>
+            <h3>Estimate</h3>
+            <p>Develop project cost estimations and the required documentation.</p>
+          </article>
+          <article class="process__step reveal" data-reveal data-reveal-delay="360">
+            <span class="process__num">05</span>
+            <h3>Document</h3>
+            <p>Prepare tender and project documentation.</p>
+          </article>
+          <article class="process__step reveal" data-reveal data-reveal-delay="450">
+            <span class="process__num">06</span>
+            <h3>Deliver</h3>
+            <p>Provide practical engineering outputs ready to support execution.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         Call to action
+         ================================================================== -->
+    <section class="cta">
+      <div class="cta__media" aria-hidden="true" data-parallax="0.12">
+        <picture>
+          <source type="image/webp"
+            srcset="assets/img/structure-aerial-960.webp 960w, assets/img/structure-aerial-1440.webp 1440w, assets/img/structure-aerial-1920.webp 1920w"
+            sizes="100vw">
+          <img src="assets/img/structure-aerial.jpg" alt="" width="2800" height="1200" loading="lazy" decoding="async">
+        </picture>
+      </div>
+      <div class="shell cta__inner">
+        <p class="eyebrow reveal" data-reveal>Start here</p>
+        <h2 class="reveal" data-reveal data-reveal-delay="60">Bring us in at the structural stage.</h2>
+        <p class="reveal" data-reveal data-reveal-delay="120">
+          Share your project requirements and we can outline the engineering, design and documentation involved.
+        </p>
+        <a class="btn btn--light reveal" data-reveal data-reveal-delay="180" href="#contact">
+          Request a Consultation
+          <svg class="btn__arrow" aria-hidden="true">
+            <use href="#icon-arrow"></use>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         Contact
+         ================================================================== -->
+    <section class="section section--paper" id="contact">
+      <div class="shell">
+        <div class="section-head">
+          <p class="eyebrow reveal" data-reveal>Contact</p>
+          <h2 class="section-head__title reveal" data-reveal data-reveal-delay="60">Let's Discuss Your Project</h2>
+          <p class="section-head__lead reveal" data-reveal data-reveal-delay="120">
+            Tell us about your project and our team can help you understand the engineering, design and documentation
+            requirements.
+          </p>
+        </div>
+
+        <div class="contact__grid">
+          <div class="reveal" data-reveal>
+            <form id="enquiry-form" class="form" novalidate>
+              <div class="form__grid">
+                <div class="field">
+                  <label class="field__label" for="f-name">Full name <span class="req" aria-hidden="true">*</span></label>
+                  <input id="f-name" name="name" type="text" autocomplete="name" required
+                    aria-describedby="e-name">
+                  <p class="field__error" id="e-name" role="alert" aria-live="polite"></p>
+                </div>
+
+                <div class="field">
+                  <label class="field__label" for="f-phone">Phone number <span class="req" aria-hidden="true">*</span></label>
+                  <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required
+                    aria-describedby="e-phone">
+                  <p class="field__error" id="e-phone" role="alert" aria-live="polite"></p>
+                </div>
+
+                <div class="field">
+                  <label class="field__label" for="f-email">Email address <span class="req" aria-hidden="true">*</span></label>
+                  <input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" required
+                    aria-describedby="e-email">
+                  <p class="field__error" id="e-email" role="alert" aria-live="polite"></p>
+                </div>
+
+                <div class="field">
+                  <label class="field__label" for="f-type">Project type <span class="req" aria-hidden="true">*</span></label>
+                  <select id="f-type" name="projectType" required aria-describedby="e-type">
+                    <option value="">Select a project type</option>
+                    <option>RCC Structure</option>
+                    <option>High Rise Building</option>
+                    <option>Apartment / Flat</option>
+                    <option>Villa</option>
+                    <option>Individual House</option>
+                    <option>Site Layout</option>
+                    <option>Steel Structure</option>
+                    <option>Industrial Structure</option>
+                    <option>Commercial Structure</option>
+                    <option>Pre-Engineered Building</option>
+                    <option>Design &amp; Drawings</option>
+                    <option>Cost Estimation</option>
+                    <option>Tender Documents</option>
+                    <option>Other</option>
+                  </select>
+                  <p class="field__error" id="e-type" role="alert" aria-live="polite"></p>
+                </div>
+
+                <div class="field field--wide">
+                  <label class="field__label" for="f-location">Location</label>
+                  <input id="f-location" name="location" type="text" autocomplete="address-level2"
+                    placeholder="City or site location" aria-describedby="e-location">
+                  <p class="field__error" id="e-location" role="alert" aria-live="polite"></p>
+                </div>
+
+                <div class="field field--wide">
+                  <label class="field__label" for="f-message">Message <span class="req" aria-hidden="true">*</span></label>
+                  <textarea id="f-message" name="message" rows="5" required aria-describedby="e-message"
+                    placeholder="Briefly describe the project, the structure involved and what you need from us."></textarea>
+                  <p class="field__error" id="e-message" role="alert" aria-live="polite"></p>
+                </div>
+              </div>
+
+              <!-- Spam trap, left empty by real visitors -->
+              <div class="visually-hidden" aria-hidden="true">
+                <label for="f-company">Do not fill this field</label>
+                <input id="f-company" name="_company" type="text" tabindex="-1" autocomplete="off">
+              </div>
+
+              <div class="form__foot">
+                <button class="btn" type="submit" id="form-submit">
+                  <span class="spinner" aria-hidden="true"></span>
+                  <span class="btn__label">Request a Consultation</span>
+                  <svg class="btn__arrow" aria-hidden="true">
+                    <use href="#icon-arrow"></use>
+                  </svg>
+                </button>
+                <p class="form__note">Fields marked with an asterisk are required.</p>
+              </div>
+
+              <div class="form__status" id="form-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <aside class="contact__panel reveal" data-reveal data-reveal-delay="120">
+            <h3>What happens next</h3>
+            <ol class="contact__steps">
+              <li><span class="n">01</span><span>We review your requirements and the type of structure involved.</span>
+              </li>
+              <li><span class="n">02</span><span>We outline the engineering, design and documentation scope.</span></li>
+              <li><span class="n">03</span><span>We share the next steps for taking the project forward.</span></li>
+            </ol>
+            <div class="contact__details" id="contact-details"></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       Footer
+       ==================================================================== -->
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/logo/lne-lockup-light.png" alt="Laxmi Narasimha Engineers" width="661" height="112"
+            loading="lazy">
+          <p>Structural engineering, design and project documentation for residential, commercial and industrial
+            developments.</p>
+        </div>
+
+        <nav aria-label="Footer">
+          <p class="footer__title">Navigate</p>
+          <ul class="footer__list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <p class="footer__title">Services</p>
+          <ul class="footer__list">
+            <li><a href="#services">RCC Structures</a></li>
+            <li><a href="#services">Steel Structures</a></li>
+            <li><a href="#services">Pre-Engineered Buildings</a></li>
+            <li><a href="#services">Site Layouts</a></li>
+            <li><a href="#services">Designs &amp; Drawings</a></li>
+            <li><a href="#services">Estimations &amp; Tenders</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__title">Contact</p>
+          <ul class="footer__list" id="footer-contact">
+            <li><a href="#contact">Request a consultation</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; <span id="year">2026</span> Laxmi Narasimha Engineers. All rights reserved.</span>
+        <span>Engineering. Structures. Construction.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
 </body>
 
 </html>

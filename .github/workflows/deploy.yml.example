@@ -1,0 +1,62 @@
+# Optional deployment workflow.
+#
+# Use this only if you want the contact form endpoint to live in a repository
+# secret instead of in js/config.js. See README.md, section "Contact form".
+#
+# To enable:
+#   1. Rename this file to deploy.yml
+#   2. Add the FORM_ENDPOINT secret (and FORM_ACCESS_KEY if your provider needs one)
+#      under Settings, Secrets and variables, Actions
+#   3. Set Settings, Pages, Source to "GitHub Actions"
+#
+# While this file keeps the .example suffix it is inert and the existing branch
+# based GitHub Pages deployment continues to work unchanged.
+
+name: Deploy site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Inject form configuration
+        env:
+          FORM_ENDPOINT: ${{ secrets.FORM_ENDPOINT }}
+          FORM_ACCESS_KEY: ${{ secrets.FORM_ACCESS_KEY }}
+        run: |
+          if [ -n "$FORM_ENDPOINT" ]; then
+            sed -i "s|__FORM_ENDPOINT__|${FORM_ENDPOINT}|g" js/config.js
+          fi
+          if [ -n "$FORM_ACCESS_KEY" ]; then
+            sed -i "s|__FORM_ACCESS_KEY__|${FORM_ACCESS_KEY}|g" js/config.js
+          fi
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
